@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles (Mobile First) */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: black;
+    padding: 20px 20px;
+    color: white;
+    position: relative; /* Corrected from 'righ' */
+}
+
+.logo-container a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+}
+
+/* Mobile Menu Button */
+.navButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* Navbar Navigation (Mobile Hidden by Default) */
+.navbar-nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 95%;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 10;
+    list-style: none;
+    margin-top: -14px;
+    
+}
+/* Show Navbar when Active */
+.navbar-nav.active {
+    display: flex;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+/* Home Section */
+#home-section {
+    text-align: center;
+    padding: 30px 10px;
+    background: #f8f9fa;
+    margin: -30px 20px 0 20px;
+
+}
+
+.home-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.text .subheading {
+    font-size: 14px;
+    color: #B1B493;
+}
+
+.text .meanText {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.text .meanText span {
+    color: #B1B493;
+}
+
+.text p {
+    margin-top: 100px;
+}
+.text .hire-button,
+.text .cv-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 17px;
+}
+
+.hire-button {
+    background: #B1B493;
+    color: white;
+    border: 2px solid #B1B493;
+}
+
+.cv-button {
+    background: white;
+    color: #B1B493;
+    border: 2px solid #B1B493;
+    border-radius: 4px;
+}
+
+/* Footer Section */
+.footer-container {
+    background: #232931;
+    color: white;
+    padding: 20px 0;
+}
+.footer {
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer .heading-2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    text-decoration: none;
+    color: #84888C;
+    transition: color 0.3s ease;
+}
+
+.footer .page-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .page-links li {
+    margin: 5px 0;
+}
+
+.footer .page-links a {
+    text-decoration: none;
+    color: #84888C;
+    transition: color 0.3s ease;
+}
+
+/* Styling the 'Learn more' button */
+.Learn-button {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Learn-button:hover {
+    text-decoration: underline;
+}
+
+.footer-end {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #474f57;
+}
+
+/* ========================== */
+/* Tablet Styles (Min-width: 768px) */
+/* ========================== */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        display: flex !important;
+        flex-direction: row;
+        gap: 20px;
+        position: static;
+        width: auto;
+        background: none;
+    }
+
+    .navButton {
+        display: none;
+    }
+    .container-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        gap: 10px; /* Optional: Adds space between the two items */
+    }
+    
+    .container-box > :nth-child(1) {
+        flex: 0 0 60%; /* 60% width, don't grow or shrink */
+    }
+    
+    .container-box > :nth-child(2) {
+        flex: 0 0 40%; /* 40% width, don't grow or shrink */
+    }
+    
+
+    #home-section {
+        padding: 50px 20px;
+    }
+
+    .text .meanText {
+        font-size: 28px;
+    }
+
+    .text .subheading {
+        font-size: 16px;
+    }
+
+    
+    .text .hire-button,
+    .text .cv-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+/* 
+    /* Footer Container Styles */
+.vertical {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Distribute space evenly between columns */
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Styling for each vertical section */
+.vertical-1, .vertical-2, .vertical-3 {
+    flex: 1; /* Each section takes equal space */
+    margin: 10px; /* Space between the sections */
+}
+
+/* Header Styles */
+.heading-2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for Links */
+.page-links {
+    list-style: none;
+    padding: 0;
+}
+
+.page-links li {
+    margin: 5px 0;
+}
+
+.page-links a {
+    text-decoration: none;
+    color: #84888C;
+    transition: color 0.3s ease;
+}
+
+.page-links a:hover {
+    color: #f39c12;
+} 
+
+}
+
+/* ========================== */
+/* Desktop Styles (Min-width: 1024px) */
+/* ========================== */
+@media (min-width: 1024px) {
+    nav {
+        padding: 10px 40px;
+    }
+    .container-box {
+        display: flex;
+        flex-direction: row-reverse; /* Reverse the order of the children */
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    #home-section {
+        padding: 70px 50px;
+    }
+
+    .home-container img {
+        max-width: 600px;
+    }
+
+    .text .meanText {
+        font-size: 36px;
+    }
+
+    .text .subheading {
+        font-size: 18px;
+    }
+
+    .footer .heading-2 {
+        font-size: 20px;
+    }
+}

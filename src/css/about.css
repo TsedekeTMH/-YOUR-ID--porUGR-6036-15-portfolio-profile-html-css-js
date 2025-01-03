@@ -1,0 +1,149 @@
+/* General Styles */
+.about-section {
+    padding: 40px 20px;
+    background-color: #f9fafc;
+}
+
+/* Container */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Image */
+.img-about img {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Info */
+.about-info {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.subheading {
+    font-size: 14px;
+    color: #B1B493;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.about-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* About Info List */
+.about-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.about-info-list li {
+    margin: 8px 0;
+    font-size: 14px;
+    
+}
+
+.about-info-list li span:first-child {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Hobbies Section */
+.hobby {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.hobby .text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.hobby audio,
+.hobby video {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        text-align: left;
+    }
+.container-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+    .img-about {
+        flex: 1;
+        max-width: 50%;
+    }
+    .img-about img {
+        display: block;
+    }
+
+    .about-info {
+        flex: 1;
+    }
+
+    .hobby {
+        justify-content: flex-start;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .about-container {
+        gap: 50px;
+    }
+
+    .about-info h2 {
+        font-size: 28px;
+    }
+
+    .about-info p {
+        font-size: 16px;
+    }
+
+    .hobby .text {
+        font-size: 16px;
+    }
+}
