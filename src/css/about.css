@@ -1,6 +1,6 @@
 /* General Styles */
 .about-section {
-    padding: 40px 20px;
+    padding: 40px 140px;
     background-color: #f9fafc;
 }
 
@@ -9,8 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
-    text-align: center;
+   
 }
 
 /* About Image */
@@ -24,9 +23,8 @@
 
 /* About Info */
 .about-info {
-    text-align: left;
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 10px auto;
 }
 
 .subheading {
@@ -34,20 +32,20 @@
     color: #B1B493;
     margin-bottom: 10px;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 
 .about-info h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .about-info p {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 /* About Info List */
@@ -56,44 +54,62 @@
     padding: 0;
     margin: 0;
     
+    
 }
 
 .about-info-list li {
     margin: 8px 0;
-    font-size: 14px;
+    font-size: 20px;
     
 }
 
 .about-info-list li span:first-child {
     font-weight: bold;
     margin-right: 5px;
+    text-align: left;
+}
+.about-info-list li span:last-child {
+    color: #90992F;
+    text-align: right;
 }
 
 /* Hobbies Section */
 .hobby {
-    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.hobby > div {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 20px;
 }
 
-.hobby .text {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
+.hobby > div > div {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
     text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.hobby audio,
-.hobby video {
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+audio, video {
     width: 100%;
-    max-width: 300px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-/* Responsive Design */
-
+video {
+    height: 150px;
+}
 /* Tablet View */
 @media (min-width: 768px) {
     .about-container {

@@ -9,11 +9,10 @@
   </head>
   <body>
     <nav>
-      <div class="logo-container">
-        <a href="index.html">Tsedeke</a>
-        <button
-          class="navButton"
-          type="button"> Menu </button>
+      <div class="logo">Tsedeke</div>
+
+       
+        
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
@@ -24,7 +23,9 @@
             <li class="nav-item"><a href="./contact-section.html" class="nav-link"><span>Contact</span></a></li>
           </ul>
         </div>
-      </div>
+        <button
+        class="navButton"
+        type="button"> Menu </button>
     </nav>
 
 
@@ -50,36 +51,53 @@
                 </p>
 
                 <ul class="about-info-list">
-                  <li><span>Name:</span> <span>Tsedeke Techane</span></li>
-                  <li><span>Date of birth:</span> <span>May 04, 2003</span></li>
-                  <li><span>Address:</span> <span>Addis Ababa Ethiopia</span> </li>
-                  <li><span>Zip code:</span> <span>1000</span></li>
-                  <li><span>Email:</span> <span>tsedeketechane@gmail.com</span></li>
-                  <li><span>Phone: </span> <span>+251961204648</span></li>
+                  <li><span>Name:</span> <span class="about-left">Tsedeke Techane</span></li>
+                  <li><span>Date of birth:</span> <span class="about-left">May 04, 2003</span></li>
+                  <li><span>Address:</span> <span class="about-left">Addis Ababa Ethiopia</span> </li>
+                  <li><span>Zip code:</span> <span class="about-left">1000</span></li>
+                  <li><span>Email:</span> <span class="about-left">tsedeketechane@gmail.com</span></li>
+                  <li><span>Phone: </span> <span class="about-left">+251961204648</span></li>
                 </ul>
               </div>
 
             </div>
           </div>
-              <div class="hobby">
-                <div>
-                  <div>
+
+          <div class="hobby">
+            <h1>My Hobbies</h1>
+            <div class="hobby-container">
+                <!-- Music Section -->
+                <div class="hobby-item">
                     <div class="text">Music</div>
-                    <audio src="./audio/firmament-beautiful-inspiring-background-music-for-promo-159766.mp3"></audio>
-                  </div>
-                  <div>
-                    <div class="text">Travel</div>
-                  </div>
-                  <div>
-                    <div class="text">Movie</div>
-                    <video src="./video/Developer's Life be Like!.mp4"></video>
-                  </div>
-                  <div>
-                    <div class="text">Sports</div>
-                  </div>
+                    <audio controls>
+                        <source src="./audio/audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
-          </div>
     
+                <!-- Movie Section -->
+                <div class="hobby-item">
+                    <div class="text">Movie</div>
+                    <video controls>
+                        <source src="./video/Developer's Life be Like!.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+    
+                <!-- Sports Section -->
+                <div class="hobby-item">
+                    <div class="text">Sports</div>
+                    <p>Staying active and fit through sports activities.</p>
+                </div>
+    
+                <!-- Travel Section -->
+                <div class="hobby-item">
+                    <div class="text">Travel</div>
+                    <p>Exploring new places and cultures is always exciting!</p>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
   </section>
 
